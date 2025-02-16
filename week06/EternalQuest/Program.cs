@@ -4,9 +4,9 @@ using System.IO;
 
 namespace EternalQuest
 {
-    // =============================
-    //           Base Class
-    // =============================
+    
+    // Base Class
+    
     public abstract class Goal
     {
         private string _name;
@@ -68,9 +68,9 @@ namespace EternalQuest
         }
     }
 
-    // =============================
+    
     //      Derived Class: SimpleGoal
-    // =============================
+    
     // A simple goal can be completed exactly once. Once done, it's marked complete.
     public class SimpleGoal : Goal
     {
@@ -107,9 +107,9 @@ namespace EternalQuest
         }
     }
 
-    // =============================
+    
     //     Derived Class: EternalGoal
-    // =============================
+    
     // An eternal goal never ends. Each time the user records progress, they get points, but it never completes.
     public class EternalGoal : Goal
     {
@@ -139,9 +139,9 @@ namespace EternalQuest
         }
     }
 
-    // =============================
+    
     //    Derived Class: ChecklistGoal
-    // =============================
+    
     // A checklist goal requires a certain number of completions. Each completion awards some points,
     // and on the final completion, a bonus is awarded.
     public class ChecklistGoal : Goal
@@ -199,9 +199,9 @@ namespace EternalQuest
         }
     }
 
-    // =============================
+    
     //        Goal Manager
-    // =============================
+    
     // This class manages the list of goals and the user's total score.
     public class GoalManager
     {
@@ -334,9 +334,9 @@ namespace EternalQuest
         }
     }
 
-    // =============================
-    //           Program
-    // =============================
+    
+    //Program
+    
     class Program
     {
         static void Main(string[] args)
